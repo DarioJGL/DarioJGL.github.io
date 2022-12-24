@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1><img class="logo-encabezado" src="imagenes/Logo.png" /></h1>
+      <section class="principal">
+        <form>
+          <textarea
+            name="ingresodetexto"
+            id="input-texto"
+            class="escribir"
+            placeholder="Ingresa el texto aqui"
+          ></textarea>
+        </form>
+        <div class="botones">
+          <button id="btn-encriptar" class="b-encriptar" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button
+            id="btn-desencriptar"
+            class="b-desencriptar"
+            onclick="desencriptar()"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section class="secuandaria">
+        <form name="f1">
+          <div class="cuadrado">
+            <textarea
+              name="campo1"
+              class="text-input-salida"
+              type="text"
+              readonly
+              id="msg"
+            ></textarea>
+          </div>
+        </form>
+        <div name="f2">
+          <div class="boton" type="button" value="copiar">
+            <button id="copiartexto" onclick="copiar()">Copiar</button>
+          </div>
+          <div id="ocultar" class="cuadrado">
+            <h3 class="muñeco"><img src="imagenes/Muñeco.png" alt="" /></h3>
+            <h3 class="texto-no">Ningún mensaje fue encontrado</h3>
+            <h4 class="texto-no-down">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </h4>
+          </div>
+        </div>   
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+      <p>DarioJGL</p>
+      <p>&copy; Copyright 2022</p>
+    </footer>
+  </body>
+</html>
